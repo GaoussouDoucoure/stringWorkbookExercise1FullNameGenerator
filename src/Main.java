@@ -1,15 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner sc = new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.print("Enter your first name: ");
+        String firstName = sc.nextLine();
+        System.out.print("Enter your middle name (or press Enter to skip): ");
+        String middleName = sc.nextLine();
+        System.out.print("Enter your last name: ");
+        String lastName = sc.nextLine();
+        System.out.print("Enter your suffix (or press Enter to skip): ");
+        String suffix = sc.nextLine();
+
+        String fullName = firstName + " " + (middleName.isEmpty() ? "" : middleName + " ") + lastName + (suffix.isEmpty() ? "" : ", " + suffix); // ternary is true : false, just like if : else
+        fullName = fullName.trim();
+
+        System.out.printf("Fullname is: %s", fullName);
     }
 }
