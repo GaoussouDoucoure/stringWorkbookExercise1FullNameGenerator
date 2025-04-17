@@ -21,3 +21,22 @@ public class Main {
         System.out.printf("Fullname is: %s", fullName);
     }
 }
+
+//USING STRINGBUILDER
+/*
+// Adding all names together
+        StringBuilder fullName = new StringBuilder();
+        fullName.append(firstName);
+
+        if (!middleName.isEmpty()) {
+            fullName.append(" ").append(middleName);
+        }
+
+        fullName.append(" ").append(lastName);
+
+        if (!suffix.isEmpty()) {
+            fullName.append(", ").append(suffix);
+        }
+
+        System.out.println("Full Name: " + fullName.toString());
+ */
