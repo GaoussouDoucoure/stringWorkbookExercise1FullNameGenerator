@@ -1,3 +1,5 @@
+// FULL NAME GENERATOR EXERCISE IN THE WORKBOOK WEEK 2
+
 import java.util.Scanner;
 
 public class Main {
