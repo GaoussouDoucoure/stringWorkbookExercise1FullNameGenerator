@@ -18,7 +18,7 @@ public class Main {
         String fullName = firstName + " " + (middleName.isEmpty() ? "" : middleName + " ") + lastName + (suffix.isEmpty() ? "" : ", " + suffix); // ternary is true : false, just like if : else
         fullName = fullName.trim();
 
-        System.out.printf("Fullname is: %s", fullName);
+        System.out.printf("Full name is: %s", fullName);
     }
 }
 
@@ -38,5 +38,5 @@ public class Main {
             fullName.append(", ").append(suffix);
         }
 
-        System.out.println("Full Name: " + fullName.toString());
+        System.out.printf("Full name: %s" + fullName);
  */
